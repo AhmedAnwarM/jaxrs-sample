@@ -39,7 +39,6 @@ public class StudentResources {
     @GET
     public Response getAllStudents() {
         try {
-            System.out.println("Entering getAllStudents()");
             return Response.ok().
                     entity(repo.getAllStudents()).
                     build();
